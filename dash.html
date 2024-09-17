@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .row {
+        display: flex; /* Enables Flexbox */
+        justify-content: space-between; /* Space between columns */
+    }
+    .column {
+        
+        padding: 20px;
+        width: 30%; /* Each column takes up 30% of the container */
+        box-sizing: border-box;
+    }
+</style>
+<body>
+    <header>
+        <h1>Restaurant Dashboard</h1>
+        <nav>
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <section class="menu-section">
+        <h2>Our Menu</h2>
+    <div class="row">
+    <div class="column">
+        <h3>Breakfast</h3>
+        <ul>
+            <li>Milk Tea - 1000/=</li>
+            <li>Black Tea - 500/=</li>
+            <li>Porridge - 1000/=</li>
+            <li>Madaazi - 500/=</li>
+            <li>Chapati - 1000/=</li>
+            <li>Sausages - 500/=</li>
+            <li>Samosa - 500/=</li>
+            <li>Beef Samosa - 1000/=</li>
+            <li>Bans - 500/=</li>
+        </ul>
+    </div>
+    <div class="column">
+        <h3>Main Meals</h3>
+        <ul>
+            <li>Beans - 3000/=</li>
+            <li>G.nut - 3000/=</li>
+            <li>Peas - 4000/=</li>
+            <li>Beef - 4000/=</li>
+            <li>Fish Fillet - 5000/=</li>
+            <li>Fresh fish - 6000/=</li>
+            <li>Chicken - 5000/=</li>
+            <li>Fish in G.nuts - 6000/=</li>
+        </ul>
+     </div>
+     <div class="column">
+        <h3>Snacks</h3>
+        <ul>
+            <li>Chaps - 2000/=</li>
+            <li>Kebab - 2000/=</li>
+            <li>Kikomando - 2000/=</li>
+            <li>Plain Chips - 3000/=</li>
+            <li>Chips/chicken - 6000/=</li>
+            <li>Plain chicken - 3000/=</li>
+            <li>Rolex - 2000/=</li>
+        </ul>
+     </div>
+     <div class="column">
+        <h3>Cold Drinks</h3>
+        <ul>
+            <li>Soda - 1000/=</li>
+            <li>Nivana - 500/=</li>
+            <li>Rwenzori - 1000/=</li>
+            <li>Juice - 1000/=</li>
+            <li>Yoghurt - 2000/=,2500/=,3500/=</li>
+            <li>Fresh fish - 6000/=</li>
+            <li>Chicken - 5000/=</li>
+            <li>Fish in G.nuts - 6000/=</li>
+        </ul>
+     </div>
+     <div class="column">
+        <h3>Fruits</h3>
+        <ul>
+            <li>Water Melon - 500/=, 1000/=</li>
+        </ul>
+    </div>
+    </div>
+    </section>
+
+    <section class="order-form">
+        <h2>Place Your Order</h2>
+        <form action="#">
+            <label for="item">Select Item</label>
+            <select id="item" required>
+                <option value="Milk Tea">Milk Tea</option>
+                <option value="Black Tea">Black Tea</option>
+                <option value="Porridge">Porridge</option>
+                <option value="Madaazi">Madaazi</option>
+                <option value="Chapati">Chapati</option>
+                <option value="Sausages">Sausages</option>
+                <option value="Samosa">Samosa</option>
+                <option value="Beef Samosa">Beef Samosa</option>
+                <option value="Bans">Bans</option>
+                <option value="Beans">Beans</option>
+                <option value="G.nut">G.nut</option>
+                <option value="Peas">Peas</option>
+                <option value="Beef">Beef</option>
+                <option value="Fish Fillet">Fish Fillet</option>
+                <option value="Fresh Fish">Fresh Fish</option>
+                <option value="Chicken">Chicken</option>
+                <option value="Fish in G.nut">Fish in G.nut</option>
+                <option value="Chaps">Chaps</option>
+                <option value="Kebab">Kebab</option>
+                <option value="Kikomando">Kikomando</option>
+                <option value="Plain Chips">Plain Chips</option>
+                <option value="Chips/chicken">Chips/Chicken</option>
+                <option value="Plain Chicken">Plain Chicken</option>
+                <option value="Rollex">Rollex</option>
+                <option value="Beans">Beans</option>
+                <option value="Beef">Beef</option>
+                <option value="Fish Fillet">Fish Fillet</option>
+                <option value="Fresh Fish">Fresh Fish</option>
+                <option value="Chicken">Chicken</option>
+                <option value="Fish in G.nuts">Fish in G.nut</option>
+                <option value="Soda">Soda</option>
+                <option value="Nivana">Nivana</option>
+                <option value="Rwenzori">Rwenzori</option>
+                <option value="Juice">Juice</option>
+                <option value="Yoghurt">Yoghurt</option>
+
+            </select>
+
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" min="1" max="20" required>
+
+            <button type="submit">Order Now</button>
+        </form>
+    </section>
+
+    <section class="pictures-section">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="images/Earl Grey Milk Tea.jpeg" alt="Pizza">
+            <img src="images/The Ultimate Crispy Baked Wings (2).jpeg" alt="Pasta">
+            <img src="images/menu-burger-img.jpg" alt="Burger">
+            <img src="images/menu-beverage-img.jpg" alt="Salad">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 The Best Restaurant</p>
+    </footer>
+</body>
+</html>

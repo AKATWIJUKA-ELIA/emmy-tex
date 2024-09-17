@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #01431a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    text-align: right;
+    padding-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/BG.jpeg);
+
+}
+
+.form-container {
+    background-color:white;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 15px;
+    width: 300px;
+}
+
+form input, form select, form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+form button {
+    background-color: #01431a;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #01431a;
+}
+
+.menu-section, .order-form, .pictures-section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.menu-section ul {
+    list-style-type: none;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gallery img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color:#01431a;
+    color: darkorange;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px); /* Adjust height to fill the viewport, excluding header and footer */
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+
+form input, form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+form button {
+    background-color: darkorange;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.signup{
+    background-color: darkorange;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+
+form button:hover {
+    background-color: #ff8000;
+}
+
+/* Remove white space for footer and form */
+section.background {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.classic-btn {
+    background-color: #01431a; /* Soft, muted color */
+    color: darkorange; /* Dark, but not black */
+    padding: 10px 20px; /* More padding for a solid button feel */
+    font-family: 'Georgia', serif; /* Classic serif font */
+    font-size: 16px; /* Larger text for prominence */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth hover transition */
+    align-content: center;
+}
+
+
+
+
